@@ -29,7 +29,7 @@ public class WebGeneric extends BaseTest {
 		Reporter.log(page+" page is displayed", true);
 		}
 		catch(Exception e) {
-			Reporter.log(page+" page is not displayed", true);
+			Reporter.log(page+" page is not displayed...", true);
 			Assert.fail();
 		}
 		
