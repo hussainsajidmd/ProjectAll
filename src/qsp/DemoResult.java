@@ -1,6 +1,5 @@
 package qsp;
 import org.testng.annotations.Test;
-import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 

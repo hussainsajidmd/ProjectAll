@@ -1,77 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[Dashboard page is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Element is Visible]]>
-    </line>
-    <line>
-      <![CDATA[Login page is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Test: testA is Pass ]]>
-    </line>
-    <line>
-      <![CDATA[TestName:testA Status: Pass]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34999" started-at="2018-10-14T03:20:27Z" finished-at="2018-10-14T03:21:02Z">
+  <suite name="Default suite" duration-ms="14696" started-at="2018-10-19T06:48:22Z" finished-at="2018-10-19T06:48:37Z">
     <groups>
-      <group name="smoke">
-        <method signature="OrangeTC1.testA()[pri:1, instance:script.OrangeTC1@6093dd95]" name="testA" class="script.OrangeTC1"/>
-      </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="34999" started-at="2018-10-14T03:20:27Z" finished-at="2018-10-14T03:21:02Z">
-      <class name="script.OrangeTC1">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.OrangeTC1@6093dd95]" name="openApp" is-config="true" duration-ms="21623" started-at="2018-10-14T08:50:27Z" finished-at="2018-10-14T08:50:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[localhost]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="14696" started-at="2018-10-19T06:48:22Z" finished-at="2018-10-19T06:48:37Z">
+      <class name="qsp.DemK">
+        <test-method status="PASS" signature="open()[pri:0, instance:qsp.DemK@e25b2fe]" name="open" duration-ms="14659" started-at="2018-10-19T12:18:22Z" finished-at="2018-10-19T12:18:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testA()[pri:1, instance:script.OrangeTC1@6093dd95]" name="testA" duration-ms="11614" started-at="2018-10-14T08:50:48Z" finished-at="2018-10-14T08:51:00Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Dashboard page is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Element is Visible]]>
-            </line>
-            <line>
-              <![CDATA[Login page is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Test: testA is Pass ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.OrangeTC1@6093dd95]" name="closeApp" is-config="true" duration-ms="1716" started-at="2018-10-14T08:51:00Z" finished-at="2018-10-14T08:51:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA status=SUCCESS method=OrangeTC1.testA()[pri:1, instance:script.OrangeTC1@6093dd95] output=Dashboard page is displayed]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TestName:testA Status: Pass]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- script.OrangeTC1 -->
+        </test-method> <!-- open -->
+      </class> <!-- qsp.DemK -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

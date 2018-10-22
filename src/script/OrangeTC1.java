@@ -15,6 +15,7 @@ public class OrangeTC1 extends BaseTest {
 		String pw=Utility.getDataFromXL(DATA_PATH, "OrangeTC1", 1, 1);
 		String dbURL=Utility.getDataFromXL(DATA_PATH, "OrangeTC1", 1, 2);
 		String loginURL=Utility.getDataFromXL(DATA_PATH, "OrangeTC1", 1, 3);
+
 		//Enter valid username and password & click login
 		LoginPage login=new LoginPage(driver);
 		login.setUsername(un);
@@ -32,3 +33,18 @@ public class OrangeTC1 extends BaseTest {
 		
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

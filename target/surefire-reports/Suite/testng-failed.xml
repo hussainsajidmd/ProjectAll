@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
-  <test thread-count="5" verbose="0" name="Test(failed)">
+<suite verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" verbose="0" name="Test(failed)" parallel="tests">
+    <parameter name="ip" value="localhost"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="script.DemoA">
+      <class name="script.OrangeTC1">
         <methods>
           <include name="testA"/>
           <include name="openApp"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- script.DemoA -->
+      </class> <!-- script.OrangeTC1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

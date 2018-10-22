@@ -2,12 +2,12 @@ package qsp;
 import java.util.concurrent.TimeUnit;
 import java.util.List;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.interactions.Actions;
 
 public class ClearTrip {
 	static{
@@ -25,17 +25,26 @@ public class ClearTrip {
 		driver.findElement(By.xpath("//a[contains(text(),'GOI')]")).click();
 		driver.findElement(By.xpath("//a[contains(@class,'highlight')]")).click();
 		driver.findElement(By.id("SearchBtn")).click();
-		List<WebElement> price=driver.findElements(By.xpath("//th[@class='price']"));
-		System.out.println("Total number of flight is "+price.size());
-		for(int i=1;i<price.size();i++){
-			String a = price.get(i-1).getText().substring(1).replaceAll(",","");
-			int a1 = Integer.parseInt(a);
-			String b = price.get(i).getText().substring(1).replaceAll(",","");
-			int b1 = Integer.parseInt(b);
-			System.out.println("Comparing "+a1+" with "+b1);
-			if(a1<=b1){
-				System.out.println("Pass..");
-			}
-			else{
-				System.out.println("Fail..");
-			}}}}
+		
+		//Handle the slider
+		WebElement slider=driver.findElement(By.className("rangeHandle"));
+		int x = slider.getSize().getWidth();
+		System.out.println(x);
+		Actions action=new Actions(driver);
+		action.clickAndHold(slider).moveByOffset(x-50,0).release().build().perform();
+
+	}}
+//		List<WebElement> price=driver.findElements(By.xpath("//th[@class='price']"));
+//		System.out.println("Total number of flight is "+price.size());
+//		for(int i=1;i<price.size();i++){
+//			String a = price.get(i-1).getText().substring(1).replaceAll(",","");
+//			int a1 = Integer.parseInt(a);
+//			String b = price.get(i).getText().substring(1).replaceAll(",","");
+//			int b1 = Integer.parseInt(b);
+//			System.out.println("Comparing "+a1+" with "+b1);
+//			if(a1<=b1){
+//				System.out.println("Pass..");
+//			}
+//			else{
+//				System.out.println("Fail..");
+//			}}

@@ -3,6 +3,7 @@ package generic;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.net.URL;
 import java.util.Date;
 import java.util.Properties;
@@ -21,17 +22,21 @@ public class Utility {
 		Date d=new Date();
 		String dateTime = d.toString().replaceAll(":","_");
 		String path=folder+"/"+dateTime+".png";
-		try{
+		try {
 			TakesScreenshot t=(TakesScreenshot)driver;
 			File srcFile = t.getScreenshotAs(OutputType.FILE);
 			File destFile=new File(path);
-			FileUtils.copyFile(srcFile, destFile);
-		}
-		catch(Exception e){
-			e.printStackTrace();	
-		}
+			
+				FileUtils.copyFile(srcFile, destFile);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+	
+		
 		return path;
 	}
+	
+
 
 	public static WebDriver openBrowser(String ip,String browser){
 		WebDriver driver;

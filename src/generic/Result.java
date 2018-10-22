@@ -30,10 +30,17 @@ public class Result implements ITestListener,IAutoConst {
 		Utility.writeResultToXL(RES_PATH, passCount, failCount);
 
 	}
-
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	//update only above mentioned 3 methods & keep all the other methods as it is
-
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -55,7 +62,15 @@ public class Result implements ITestListener,IAutoConst {
 	public void onStart(ITestContext context) {
 
 	}
-
-
-
 }
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

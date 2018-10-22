@@ -19,7 +19,7 @@ public class TakeScreenshot {
 		WebDriver driver=new ChromeDriver(); //up-casting
 		driver.get("http://www.google.com");
 		TakesScreenshot ts=(TakesScreenshot)driver; //type-casting
-		File s = ts.getScreenshotAs(OutputType.FILE);
+		//File s = ts.getScreenshotAs(OutputType.FILE);
 		File srcFile=ts.getScreenshotAs(OutputType.FILE);
 		File destFile=new File("./photo/a.png"); //png- portable network graphics
 		FileUtils.copyFile(srcFile, destFile);

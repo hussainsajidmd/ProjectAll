@@ -4,7 +4,6 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 public class PrintKeyboard {
 	static{
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
