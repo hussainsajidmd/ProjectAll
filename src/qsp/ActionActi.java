@@ -11,10 +11,10 @@ public class ActionActi {
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 	}
 	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver=new ChromeDriver();
+		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://www.actitime.com");
-		WebElement menu = driver.findElement(By.linkText("Features"));
+		menu = driver.findElement(By.linkText("Features"));
 		//Mouse hover on the menu
 		Actions actions=new Actions(driver);
 		actions.moveToElement(menu).perform();
