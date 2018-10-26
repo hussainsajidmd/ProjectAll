@@ -14,7 +14,7 @@ public class ActionActi {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://www.actitime.com");
-		menu = driver.findElement(By.linkText("Features"));
+		WebElement menu = driver.findElement(By.linkText("Features"));
 		//Mouse hover on the menu
 		Actions actions=new Actions(driver);
 		actions.moveToElement(menu).perform();

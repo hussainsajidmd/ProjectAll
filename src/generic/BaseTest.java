@@ -21,7 +21,6 @@ public abstract class BaseTest implements IAutoConst {
 	public String ETO=Utility.getProperty(CONFIG_PATH, "ETO");
 	public long lngETO=Long.parseLong(ETO);
 	public String url=Utility.getProperty(CONFIG_PATH, "URL");
-	public abstract void open();
 
 	@Parameters({"ip","browser"})
 	@BeforeMethod(alwaysRun=true)
