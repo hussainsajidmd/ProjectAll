@@ -2,20 +2,15 @@ package qsp;
 
 import java.util.Scanner;
 
-public class De {
 
+public class De {
+	
 	public static void main(String[] args) {
 		Scanner input=new Scanner(System.in);
-		System.out.println("Enter the number to find it is even or not: ");
+		System.out.println("Enter the value whose multiplication table u want.");
 		int n=input.nextInt();
-		if(n%2==0) {
-			System.out.println(n+" is even number.");
+		for(int i=1; i<=10; i++) {
+			System.out.println(n+" x "+i+" = "+n*i);
 		}
-		else {
-			System.out.println(n+" is odd number.");
-		}
-		System.exit(0);
-
 	}
-
 }

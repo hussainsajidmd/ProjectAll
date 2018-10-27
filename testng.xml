@@ -1,7 +1,7 @@
 
 <suite name="Suite">
   <test name="Test">
-  <parameter name="ip" value="192.168.31.73"/>
+  <parameter name="ip" value="192.168.1.109"/>
   <parameter name="browser" value="chrome"/>
     <packages>
       <package name="script"/>
